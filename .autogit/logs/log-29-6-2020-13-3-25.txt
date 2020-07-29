@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jul 29 2020 13:03:25 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Assets/Scenes/MainScene.unity
+* Assets/Scenes/Second.unity
+* Assets/Scripts/Projectile.cs
+* Assets/Scripts/RubyController.cs
+
+
+Created files:
+* .autogit/logs/log-29-6-2020-12-33-19.txt
+* Assets/Art/Sprites/VFX/SpeedBerry.png
+* Assets/Art/Sprites/VFX/SpeedBerry.png.meta
+* Assets/Prefabs/SpeedBerry.prefab
+* Assets/Prefabs/SpeedBerry.prefab.meta
+* Assets/Scripts/SpeedBerry.cs
+* Assets/Scripts/SpeedBerry.cs.meta
+
+
+Deleted files:
+
+
+Renamed files:

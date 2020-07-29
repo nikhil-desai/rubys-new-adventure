@@ -22,6 +22,8 @@ public class GhostController : MonoBehaviour {
     AudioSource audioSource;
     // Count Fixed Robots
     public RubyController ruby;
+    // Ghost Life
+    bool life = true;
 
     // Start is called before the first frame update
     void Start () {
@@ -106,6 +108,10 @@ public class GhostController : MonoBehaviour {
     }
 
     public void Fix () {
+        if (life == true) {
+            life = false;
+            return;
+        }
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger ("Fixed");
