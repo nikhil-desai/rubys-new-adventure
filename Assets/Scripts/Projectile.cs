@@ -27,6 +27,7 @@ public class Projectile : MonoBehaviour {
         if (f != null) {
             f.Fix ();
         }
+        GhostController g = other.collider
         Destroy (gameObject);
         
     }

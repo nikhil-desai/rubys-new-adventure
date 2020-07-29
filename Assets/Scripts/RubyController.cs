@@ -151,12 +151,15 @@ public class RubyController : MonoBehaviour {
             animator.SetTrigger ("Hit");
             Instantiate (collisionEffect, rigidbody2d.transform.position, Quaternion.identity);
             collisionEffect.Play ();
+            if (currentSpeed <= 1) {
+                amount = 0;
+            }
         } else {
-            if (currentSpeed == maxSpeed) {
-                return;
+            if (currentSpeed >= maxSpeed) {
+                amount = 0;
             }
             Instantiate (rewardEffect, rigidbody2d.transform.position, Quaternion.identity);
-            rewardEffect.Play (); //CHANGE FOR BERRY
+            rewardEffect.Play ();
         }
 
         currentSpeed = Mathf.Clamp (currentSpeed + amount, 0, maxSpeed);

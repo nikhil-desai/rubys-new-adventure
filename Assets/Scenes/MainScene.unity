@@ -9702,6 +9702,11 @@ PrefabInstance:
       propertyPath: ammoCountText
       value: 
       objectReference: {fileID: 1289166275}
+    - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
+        type: 3}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 1583764918}
     - target: {fileID: 478661930980013271, guid: bef3e0a260a464b4ab14941772b7867e,
         type: 3}
       propertyPath: m_LocalPosition.x
