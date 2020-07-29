@@ -453,11 +453,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
-    - target: {fileID: 3514052265758716187, guid: 635a4ca8cdd052a4c9e279d4b9514020,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 635a4ca8cdd052a4c9e279d4b9514020, type: 3}
 --- !u!1 &201118332
@@ -10003,6 +9998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
         type: 3}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 1583764918}
+    - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
+        type: 3}
       propertyPath: robotCountText
       value: 
       objectReference: {fileID: 1777968775}
@@ -10011,11 +10011,6 @@ PrefabInstance:
       propertyPath: ammoCountText
       value: 
       objectReference: {fileID: 1289166275}
-    - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
-        type: 3}
-      propertyPath: speedText
-      value: 
-      objectReference: {fileID: 1583764918}
     - target: {fileID: 478661930980013271, guid: bef3e0a260a464b4ab14941772b7867e,
         type: 3}
       propertyPath: m_LocalPosition.x

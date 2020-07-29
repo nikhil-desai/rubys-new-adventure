@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
-  speed: 5
+  maxSpeed: 10
+  speedText: {fileID: 0}
   timeInvincible: 2
   collisionEffect: {fileID: 737783433798244039, guid: 896464d53e464df4194d2aa88f457b95,
     type: 3}

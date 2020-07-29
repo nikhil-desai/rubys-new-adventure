@@ -144,6 +144,7 @@ public class RubyController : MonoBehaviour {
         public void ChangeSpeed (int amount) {
         if (amount < 0) {
             if (isInvincible) {
+                speedText.text = "Speed: " + currentSpeed.ToString();
                 return;
             }
             isInvincible = true;
