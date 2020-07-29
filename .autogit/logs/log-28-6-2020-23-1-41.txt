@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Tue Jul 28 2020 23:01:41 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Assets/Prefabs/Bot.prefab
+* Assets/Prefabs/FastRobot.prefab
+* Assets/Prefabs/Ruby.prefab
+* Assets/Scenes/Second.unity
+* Assets/Scripts/Projectile.cs
+* Assets/Scripts/RubyController.cs
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
