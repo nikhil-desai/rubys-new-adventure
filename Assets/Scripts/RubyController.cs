@@ -105,10 +105,10 @@ public class RubyController : MonoBehaviour {
             }
         }
         // Winning
-        if (robotCount == 5 && SceneManager.GetActiveScene ().name == "Second") {
+        if (robotCount == 5 && SceneManager.GetActiveScene ().buildIndex == 1) {
             backgroundNoise.SetActive (false);
             winNoise.SetActive (true);
-            speed = 0;
+            rigidbody2d.simulated = false;
         }
         // Death/Game Over
         if (currentHealth <= 0) {

@@ -10341,6 +10341,16 @@ PrefabInstance:
       propertyPath: speedText
       value: 
       objectReference: {fileID: 575305474}
+    - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
+        type: 3}
+      propertyPath: backgroundNoise
+      value: 
+      objectReference: {fileID: 1974466875}
+    - target: {fileID: 478661930980013270, guid: bef3e0a260a464b4ab14941772b7867e,
+        type: 3}
+      propertyPath: winNoise
+      value: 
+      objectReference: {fileID: 278357289}
     - target: {fileID: 478661930980013271, guid: bef3e0a260a464b4ab14941772b7867e,
         type: 3}
       propertyPath: m_LocalPosition.x
