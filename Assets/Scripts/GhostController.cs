@@ -47,21 +47,25 @@ public class GhostController : MonoBehaviour {
         if (timer < 0) {
             int randomMovement = Random.Range (0, 4);
             switch (randomMovement) {
-                case 0:
+                case 0: //UP
                     vertical = true;
                     direction = direction;
+                    transform.RotateAround(ruby.transform.position, Vector3.up, 20 * Time.deltaTime);
                     break;
-                case 1:
+                case 1: //DOWN
                     vertical = true;
                     direction = -direction;
+                    transform.RotateAround(ruby.transform.position, Vector3.up, 20 * Time.deltaTime);
                     break;
-                case 2:
+                case 2: //LEFT
                     vertical = false;
                     direction = direction;
+                    transform.RotateAround(ruby.transform.position, Vector3.up, 20 * Time.deltaTime);
                     break;
-                case 3:
+                case 3: //RIGHT
                     vertical = false;
                     direction = -direction;
+                    transform.RotateAround(ruby.transform.position, Vector3.up, 20 * Time.deltaTime);
                     break;
             }
             timer = changeTime;
@@ -99,7 +103,7 @@ public class GhostController : MonoBehaviour {
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger ("Fixed");
-        ruby.CountRobotFixed();
+        ruby.CountRobotFixed ();
         smokeEffect.Stop ();
         // Destroy(smokeEffect.gameObject);
     }

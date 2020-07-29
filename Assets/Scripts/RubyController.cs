@@ -135,6 +135,24 @@ public class RubyController : MonoBehaviour {
         currentHealth = Mathf.Clamp (currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue (currentHealth / (float) maxHealth);
     }
+        public void ChangeSpeed (int amount) {
+        if (amount < 1) {
+            if (isInvincible) {
+                return;
+            }
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
+            animator.SetTrigger ("Hit");
+            Instantiate (collisionEffect, rigidbody2d.transform.position, Quaternion.identity);
+            collisionEffect.Play ();
+        } else {
+            Instantiate (rewardEffect, rigidbody2d.transform.position, Quaternion.identity);
+            rewardEffect.Play ();
+        }
+
+        currentHealth = Mathf.Clamp (currentHealth + amount, 0, maxHealth);
+        UIHealthBar.instance.SetValue (currentHealth / (float) maxHealth);
+    }
     public void CountRobotFixed () {
         robotCount++;
         robotCountText.text = "Robots Fixed: " + robotCount.ToString () + "/5";
