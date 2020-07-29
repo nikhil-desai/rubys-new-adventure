@@ -45,7 +45,25 @@ public class GhostController : MonoBehaviour {
         animator.SetFloat ("Move Y", direction);
 
         if (timer < 0) {
-            direction = -direction;
+            int randomMovement = Random.Range (0, 4);
+            switch (randomMovement) {
+                case 0:
+                    vertical = true;
+                    direction = direction;
+                    break;
+                case 1:
+                    vertical = true;
+                    direction = -direction;
+                    break;
+                case 2:
+                    vertical = false;
+                    direction = direction;
+                    break;
+                case 3:
+                    vertical = false;
+                    direction = -direction;
+                    break;
+            }
             timer = changeTime;
         }
     }

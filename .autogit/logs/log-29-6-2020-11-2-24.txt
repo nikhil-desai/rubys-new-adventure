@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jul 29 2020 11:02:24 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Assets/Art/Animations/Ghost.controller
+* Assets/Art/Sprites/Characters/GhostSheet.png
+* Assets/Prefabs/Ghost.prefab
+
+
+Created files:
+* .autogit/logs/log-29-6-2020-10-32-19.txt
+* Assets/Art/Animations/GhostDown.anim
+* Assets/Art/Animations/GhostDown.anim.meta
+* Assets/Art/Animations/GhostFixed.anim
+* Assets/Art/Animations/GhostFixed.anim.meta
+* Assets/Art/Animations/GhostLeft.anim
+* Assets/Art/Animations/GhostLeft.anim.meta
+* Assets/Art/Animations/GhostRight.anim
+* Assets/Art/Animations/GhostRight.anim.meta
+* Assets/Art/Animations/GhostUp.anim
+* Assets/Art/Animations/GhostUp.anim.meta
+* Assets/Art/Sprites/Characters/GhostSheet.png.meta
+
+
+Deleted files:
+
+
+Renamed files:
