@@ -14,7 +14,10 @@ public class RubyController : MonoBehaviour {
     public int health { get { return currentHealth; } }
     int currentHealth;
     // Speed
-    public float speed = 3.0f;
+    public float maxSpeed = 10.0f;
+    public float speed { get { return currentSpeed; } set {} }
+    float currentSpeed = 3.0f;
+    public Text speedText;
     // Invincibility
     public float timeInvincible = 2.0f;
     bool isInvincible;
@@ -44,6 +47,9 @@ public class RubyController : MonoBehaviour {
         rigidbody2d = GetComponent<Rigidbody2D> ();
         animator = GetComponent<Animator> ();
         currentHealth = maxHealth;
+
+        currentSpeed = 5.0f;
+        speedText.text = "Speed: " + currentSpeed.ToString();
 
         robotCount = 0;
         robotCountText.text = "Robots Fixed: " + robotCount.ToString () + "/5";
@@ -136,7 +142,7 @@ public class RubyController : MonoBehaviour {
         UIHealthBar.instance.SetValue (currentHealth / (float) maxHealth);
     }
         public void ChangeSpeed (int amount) {
-        if (amount < 1) {
+        if (amount < 0) {
             if (isInvincible) {
                 return;
             }
@@ -146,12 +152,15 @@ public class RubyController : MonoBehaviour {
             Instantiate (collisionEffect, rigidbody2d.transform.position, Quaternion.identity);
             collisionEffect.Play ();
         } else {
+            if (currentSpeed == maxSpeed) {
+                return;
+            }
             Instantiate (rewardEffect, rigidbody2d.transform.position, Quaternion.identity);
-            rewardEffect.Play ();
+            rewardEffect.Play (); //CHANGE FOR BERRY
         }
 
-        currentHealth = Mathf.Clamp (currentHealth + amount, 0, maxHealth);
-        UIHealthBar.instance.SetValue (currentHealth / (float) maxHealth);
+        currentSpeed = Mathf.Clamp (currentSpeed + amount, 0, maxSpeed);
+        speedText.text = "Speed: " + currentSpeed.ToString();
     }
     public void CountRobotFixed () {
         robotCount++;

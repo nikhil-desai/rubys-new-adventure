@@ -45,6 +45,7 @@ public class GhostController : MonoBehaviour {
         animator.SetFloat ("Move Y", direction);
 
         if (timer < 0) {
+            /*
             int randomMovement = Random.Range (0, 4);
             switch (randomMovement) {
                 case 0: //UP
@@ -68,6 +69,11 @@ public class GhostController : MonoBehaviour {
                     transform.RotateAround(ruby.transform.position, Vector3.up, 20 * Time.deltaTime);
                     break;
             }
+            */
+            float x = Mathf.Cos (timer);
+            float y = Mathf.Sin (timer);
+            float z = 0;
+            transform.position = new Vector3 (x, y, z);
             timer = changeTime;
         }
     }
@@ -94,7 +100,7 @@ public class GhostController : MonoBehaviour {
         RubyController player = other.gameObject.GetComponent<RubyController> ();
 
         if (player != null) {
-            player.ChangeHealth (-1);
+            player.ChangeSpeed (-1);
             player.PlaySound (collectedClip);
         }
     }
@@ -103,7 +109,6 @@ public class GhostController : MonoBehaviour {
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger ("Fixed");
-        ruby.CountRobotFixed ();
         smokeEffect.Stop ();
         // Destroy(smokeEffect.gameObject);
     }
