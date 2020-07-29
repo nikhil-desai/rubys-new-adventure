@@ -29,6 +29,7 @@ public class RubyController : MonoBehaviour {
     public GameObject projectilePrefab;
     // Audio
     AudioSource audioSource;
+    public AudioClip projectileSound;
     public GameObject backgroundNoise;
     public GameObject winNoise;
     // Fixed Robots
@@ -150,6 +151,8 @@ public class RubyController : MonoBehaviour {
             projectile.Launch (lookDirection, 300);
 
             animator.SetTrigger ("Launch");
+
+            PlaySound(projectileSound);
 
             ammoCount--;
             ammoCountText.text = ammoCount.ToString ();

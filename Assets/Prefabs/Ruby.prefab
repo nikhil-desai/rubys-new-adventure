@@ -107,7 +107,11 @@ MonoBehaviour:
     type: 3}
   projectilePrefab: {fileID: 3366875444763790975, guid: b253673813f1a844797dc15ef847d4e5,
     type: 3}
+  projectileSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  backgroundNoise: {fileID: 0}
+  winNoise: {fileID: 0}
   robotCountText: {fileID: 0}
+  robotCount: 0
   ammoCountText: {fileID: 0}
 --- !u!50 &6567531126811570571
 Rigidbody2D:

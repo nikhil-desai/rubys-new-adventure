@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
     Rigidbody2D rigidbody2d;
-    // Sound
-    public AudioClip collectedClip;
     // Start is called before the first frame update
     void Awake () {
         rigidbody2d = GetComponent<Rigidbody2D> ();
@@ -29,8 +27,7 @@ public class Projectile : MonoBehaviour {
         if (f != null) {
             f.Fix ();
         }
-
         Destroy (gameObject);
-        e.PlaySound (collectedClip);
+        
     }
 }
