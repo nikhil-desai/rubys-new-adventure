@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jul 29 2020 09:02:01 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-29-6-2020-3-32-37.txt
+* Assets/Prefabs/Ghost.prefab
+* Assets/Prefabs/Ghost.prefab.meta
+
+
+Deleted files:
+
+
+Renamed files:
